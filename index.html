@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="player">
+
+        <!-- LEFT CONTROLS -->
+        <div class="controls">
+
+            <button class="volume-button" id="volumeUp" aria-label="Volume up">
+                +
+            </button>
+
+            <button class="skip-button" id="backward" aria-label="Back 10 seconds">
+                <span></span>
+                <span></span>
+            </button>
+
+            <button class="play-button" id="playButton" aria-label="Play">
+                <span class="play-icon"></span>
+            </button>
+
+            <button class="skip-button" id="forward" aria-label="Forward 10 seconds">
+                <span></span>
+                <span></span>
+            </button>
+
+            <button class="volume-button" id="volumeDown" aria-label="Volume down">
+                −
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="song-area">
+
+            <div class="song-title" id="songTitle">
+                Not Cute Anymore
+            </div>
+
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+                <div class="progress-knob" id="progressKnob"></div>
+            </div>
+
+            <div class="bottom-row">
+
+                <button class="small-button" id="shuffleButton" aria-label="Shuffle">
+                    ⤨
+                </button>
+
+                <div class="time" id="currentTime">
+                    0:00
+                </div>
+
+                <button class="small-button" id="repeatButton" aria-label="Repeat">
+                    ↻
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AUDIO FILE -->
+    <audio id="audio" preload="metadata">
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
